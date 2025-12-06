@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="548.0" prefWidth="753.0" style="-fx-background-color: #F9F8F6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="windowControllers.tickets.ShowStatisticsOnTickets">
+   <children>
+      <TableView fx:id="table" layoutX="28.0" layoutY="75.0" prefHeight="284.0" prefWidth="686.0">
+         <columns>
+            <TableColumn fx:id="column_id" prefWidth="119.0" text="Showing number" />
+            <TableColumn fx:id="column_movie" prefWidth="169.0" text="Movie" />
+            <TableColumn fx:id="column_cinema" prefWidth="113.0" text="Cinema" />
+            <TableColumn fx:id="column_date" prefWidth="90.0" text="Date" />
+            <TableColumn fx:id="column_time" prefWidth="73.0" text="Time" />
+            <TableColumn fx:id="column_price" prefWidth="121.0" text="Cost, from" />
+         </columns>
+      </TableView>
+      <Pane prefHeight="65.0" prefWidth="753.0" style="-fx-background-color: #355326;">
+         <children>
+            <Label layoutX="300.0" layoutY="10.0" text="Statistics" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="tableTickets" layoutX="37.0" layoutY="424.0" prefHeight="110.0" prefWidth="676.0">
+        <columns>
+          <TableColumn fx:id="column_standart" prefWidth="75.0" text="standart">
+               <columns>
+                  <TableColumn fx:id="column_standart_price" prefWidth="75.0" text="cost" />
+                  <TableColumn fx:id="column_standart_total" prefWidth="75.0" text="total" />
+                  <TableColumn fx:id="column_standart_bought" prefWidth="75.0" text="bought" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="column_comfort" prefWidth="75.0" text="comfort">
+               <columns>
+                  <TableColumn fx:id="column_comfort_price" prefWidth="75.0" text="cost" />
+                  <TableColumn fx:id="column_comfort_total" prefWidth="75.0" text="total" />
+                  <TableColumn fx:id="column_comfort_bought" prefWidth="75.0" text="bought" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="column_VIP" prefWidth="75.0" text="VIP">
+               <columns>
+                  <TableColumn fx:id="column_VIP_price" prefWidth="75.0" text="cost" />
+                  <TableColumn fx:id="column_VIP_total" prefWidth="75.0" text="total" />
+                  <TableColumn fx:id="column_VIP_bought" prefWidth="75.0" text="bought" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Button fx:id="showButton" layoutX="316.0" layoutY="368.0" mnemonicParsing="false" onAction="#onShowButtonClick" prefHeight="32.0" prefWidth="118.0" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Show" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

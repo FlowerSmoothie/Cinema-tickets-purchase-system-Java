@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="542.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="windowControllers.movies.AddMovieInfo">
+   <children>
+      <Pane prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #355326;">
+         <children>
+            <Label layoutX="198.0" layoutY="22.0" text="Adding movie" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="26.0" layoutY="24.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <VBox layoutX="65.0" layoutY="99.0" prefHeight="333.0" prefWidth="490.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="561.0" spacing="10.0">
+               <children>
+                  <Label text="Name:" textFill="#b39d96">
+                     <font>
+                        <Font name="Comic Sans MS" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameField" promptText="name">
+                     <font>
+                        <Font name="Comic Sans MS" size="25.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="561.0" spacing="10.0">
+               <children>
+                  <Label text="Studio:" textFill="#b39d96">
+                     <font>
+                        <Font name="Comic Sans MS" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="studioField" promptText="name">
+                     <font>
+                        <Font name="Comic Sans MS" size="25.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="72.0" prefHeight="190.0" prefWidth="490.0" spacing="10.0">
+               <children>
+                  <Label text="Desc:" textFill="#b39d96">
+                     <font>
+                        <Font name="Comic Sans MS" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="descField" prefHeight="149.0" prefWidth="350.0" promptText="text here" scrollTop="200.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="72.0" prefHeight="42.0" prefWidth="561.0" spacing="10.0">
+               <children>
+                  <Label text="Age:" textFill="#b39d96">
+                     <font>
+                        <Font name="Comic Sans MS" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ageField" promptText="age">
+                     <font>
+                        <Font name="Comic Sans MS" size="25.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="addButton" layoutX="239.0" layoutY="450.0" mnemonicParsing="false" onAction="#onAddButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Add movie" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="message" layoutX="23.0" layoutY="492.0" prefHeight="36.0" prefWidth="555.0" text="сообщение" textFill="RED" visible="false">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

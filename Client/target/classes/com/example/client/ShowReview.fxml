@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="532.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="windowControllers.reviews.ShowReview">
+   <children>
+      <Pane prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #355326;">
+         <children>
+            <Label layoutX="182.0" layoutY="22.0" text="Showing review" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="26.0" layoutY="24.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="90.0" layoutY="107.0" prefHeight="40.0" prefWidth="421.0" spacing="10.0">
+         <children>
+            <Label text="Author:" textFill="#b39d96">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="authorLabel" layoutX="214.0" layoutY="12.0" text="nickname" textFill="#b39d96">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextArea fx:id="reviewTextArea" editable="false" layoutX="72.0" layoutY="151.0" prefHeight="292.0" prefWidth="457.0" promptText="text here" scrollTop="200.0">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="starsLabel" layoutX="261.0" layoutY="456.0" text="*****" textFill="#b39d96">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

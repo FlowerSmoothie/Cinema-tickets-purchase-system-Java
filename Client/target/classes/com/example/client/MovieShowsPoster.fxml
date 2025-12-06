@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="383.0" prefWidth="1047.0" style="-fx-background-color: #F9F8F6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="windowControllers.afisha.MovieShowsPoster">
+   <children>
+      <TableView fx:id="table" layoutX="30.0" layoutY="74.0" prefHeight="284.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="column_id" prefWidth="119.0" text="Seance number" />
+          <TableColumn fx:id="column_movie" prefWidth="156.0" text="Movie" />
+            <TableColumn fx:id="column_cinema" prefWidth="126.0" text="Cinema" />
+            <TableColumn fx:id="column_date" prefWidth="90.0" text="Date" />
+            <TableColumn fx:id="column_time" prefWidth="88.0" text="Time" />
+            <TableColumn fx:id="column_price" prefWidth="120.0" text="Cost, from" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="101.0" fitWidth="114.0" layoutX="935.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/ticketsSimple.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="65.0" prefWidth="1047.0" style="-fx-background-color: #355326;">
+         <children>
+            <Label layoutX="455.0" layoutY="9.0" text="Billboard" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="838.0" layoutY="74.0" text="Search by:" textFill="#b39d96">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="sortCombo" layoutX="777.0" layoutY="102.0" prefHeight="27.0" prefWidth="222.0" />
+      <Button fx:id="sortButton" layoutX="770.0" layoutY="174.0" mnemonicParsing="false" onAction="#onSortingClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Accept" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="buyTicketButton" layoutX="803.0" layoutY="226.0" mnemonicParsing="false" onAction="#onBuyButtonClick" style="-fx-background-color: FFBC54; -fx-background-radius: 0;" text="Book the ticket" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchField" layoutX="787.0" layoutY="138.0" prefHeight="27.0" prefWidth="204.0" />
+      <Button fx:id="clearButton" layoutX="924.0" layoutY="174.0" mnemonicParsing="false" onAction="#onClearClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

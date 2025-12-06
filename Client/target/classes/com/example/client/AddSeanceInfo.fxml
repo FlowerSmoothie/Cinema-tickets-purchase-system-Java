@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="567.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="windowControllers.seances.AddSeanceInfo">
+   <children>
+      <Pane prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #355326;">
+         <children>
+            <Label layoutX="170.0" layoutY="22.0" text="Creating showing" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="26.0" layoutY="24.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <VBox layoutX="66.0" layoutY="98.0" prefHeight="364.0" prefWidth="474.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="490.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="421.0" spacing="10.0">
+                     <children>
+                        <Label text="Movie:" textFill="#b39d96">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="movieCombo" prefHeight="27.0" prefWidth="289.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="421.0" spacing="10.0">
+                     <children>
+                        <Label text="Cinema:" textFill="#b39d96">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="cinemaCombo" prefHeight="27.0" prefWidth="289.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="40.0" prefWidth="421.0" spacing="10.0">
+                     <children>
+                        <Label text="Hall:" textFill="#b39d96">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="hallCombo" prefHeight="27.0" prefWidth="289.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="287.0" spacing="10.0">
+                     <children>
+                        <Label text="Date:" textFill="#b39d96">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="date" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="28.0" prefWidth="287.0" spacing="10.0">
+                     <children>
+                        <Label text="Time:" textFill="#b39d96">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="timeField" prefHeight="27.0" prefWidth="202.0" promptText="ХХ:ХХ">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator layoutY="5.0" prefWidth="200.0">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Separator>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="287.0" spacing="10.0">
+                     <children>
+                        <Label text="Cost for standart:" textFill="#b39d96">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="standartField" prefHeight="27.0" prefWidth="202.0" promptText="eur">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="287.0" spacing="10.0">
+                     <children>
+                        <Label text="Cost for comfort:" textFill="#b39d96">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="comfortField" prefHeight="27.0" prefWidth="202.0" promptText="eur">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="287.0" spacing="10.0">
+                     <children>
+                        <Label text="Cost for VIP:" textFill="#b39d96">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="VIPField" prefHeight="27.0" prefWidth="202.0" promptText="eur">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Button fx:id="createButton" layoutX="209.0" layoutY="486.0" mnemonicParsing="false" onAction="#onCreateButtonClick" prefHeight="42.0" prefWidth="188.0" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Create showing" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="528.0" prefHeight="36.0" prefWidth="530.0" text="сообщение" textFill="RED" visible="false">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="349.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="windowControllers.tickets.ShowTickets">
+   <children>
+      <Pane prefHeight="84.0" prefWidth="623.0" style="-fx-background-color: #355326;">
+         <children>
+            <Label layoutX="253.0" layoutY="19.0" text="Tickets" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="24.0" layoutY="21.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="212.0" layoutY="93.0" prefHeight="28.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label text="Hall:" textFill="#b39d96">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="hallNumberLabel" text="number" textFill="#b39d96">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextArea fx:id="ticketsArea" editable="false" layoutX="231.0" layoutY="127.0" prefHeight="200.0" prefWidth="362.0" promptText="Places here" scrollLeft="100.0" scrollTop="100.0">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </TextArea>
+      <VBox layoutX="40.0" layoutY="175.0" prefHeight="84.0" prefWidth="154.0">
+         <children>
+            <HBox prefHeight="28.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Standart:" textFill="#b39d96">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="normalPriceLabel" text="cost" textFill="#b39d96">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Comfort:" textFill="#b39d96">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="comfortPriceLabel" text="cost" textFill="#b39d96">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="28.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="VIP:" textFill="#b39d96">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="VIPpriceLabel" text="cost" textFill="#b39d96">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

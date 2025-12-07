@@ -1,6 +1,7 @@
 import upping.Server;
 
 import java.io.IOException;
+import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -15,7 +16,9 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        serverSocket = new ServerSocket(PORT_NUMBER);
+        serverSocket = new ServerSocket();
+        serverSocket.setReuseAddress(true);
+        serverSocket.bind(new InetSocketAddress(PORT_NUMBER));
         System.out.println("Server is working on port: " + PORT_NUMBER);
         while (true) {
             System.out.println("Waiting for clients...");

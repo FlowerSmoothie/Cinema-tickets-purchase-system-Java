@@ -17,4 +17,6 @@ The developed software application works according to the principle of "client-s
 
 The program implemented its own class hierarchy and implemented several design patterns (singletone and factory method). Also the data concealment was used, as well as overload and definition methods, serialization, abstract data types, static methods and processing of exceptional situations. Generally speaking, the tools and potential of the Java programming language were used as much as possible. Maven utility was used as project collector.
 
+In addition, the program has been tested not only by manual testing but also by automatic testing using the junit.jupiter and mockito libraries.
+
 In the long run, this program can be expanded by adding new functionality and expanding the old one. For example: adding the ability for content managers to download covers for movies and trailers, or adding more parameters for movies (such as genres).

@@ -13,7 +13,7 @@ The application is a system for managing the workflow of a cinema, or a system b
 
 The software is developed in Java as javaFX application. The data is stored in the database using the MySQL language.
 
-The developed software application works according to the principle of «client-server» with usage of the TCP/IP protocol. That is, there are two applications: client and server, which differ from each other in their functionality. The server connects to the database and maintains business logic algorithms, while the user interacts with the server through a client program via a graphical shell.
+The developed software application works according to the principle of "client-server" with usage of the TCP/IP protocol. That is, there are two applications: client and server, which differ from each other in their functionality. The server connects to the database and maintains business logic algorithms, while the user interacts with the server through a client program via a graphical shell.
 
 The program implemented its own class hierarchy and implemented several design patterns (singletone and factory method). Also the data concealment was used, as well as overload and definition methods, serialization, abstract data types, static methods and processing of exceptional situations. Generally speaking, the tools and potential of the Java programming language were used as much as possible. Maven utility was used as project collector.
 

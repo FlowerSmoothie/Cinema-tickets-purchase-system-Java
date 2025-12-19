@@ -11,7 +11,7 @@ The application is a system for managing the workflow of a cinema, or a system b
 - stored passwords are hashed using the SHA-256 algorithm.
 
 
-The software is developed in Java as javaFX application. The data is stored in the database using the MySQL language, it should be created in mysql command line, name 'cinemacourseproject'
+The software is developed in Java as javaFX application. The data is stored in the database using the MySQL language, it is created as 'cinemacourseproject'
 
 The developed software application works according to the principle of "client-server" with usage of the TCP/IP protocol. That is, there are two applications: client and server, which differ from each other in their functionality. The server connects to the database and maintains business logic algorithms, while the user interacts with the server through a client program via a graphical shell.
 

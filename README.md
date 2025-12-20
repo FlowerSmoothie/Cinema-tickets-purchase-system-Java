@@ -48,24 +48,58 @@ Some screenshots of the Client application work:
 - Usual user menus
     - Main menu
   
-  <img width="596" height="385" alt="Image" src="https://github.com/user-attachments/assets/0c4f8543-11de-4d3c-a91d-11f46cde8de3" />
+      <img width="596" height="385" alt="Image" src="https://github.com/user-attachments/assets/0c4f8543-11de-4d3c-a91d-11f46cde8de3" />
 
     - Account info menu
 
-  <img width="616" height="391" alt="Image" src="https://github.com/user-attachments/assets/e7f0447d-abdb-4b8a-ba2b-9c71049d08ba" />
+      <img width="616" height="391" alt="Image" src="https://github.com/user-attachments/assets/e7f0447d-abdb-4b8a-ba2b-9c71049d08ba" />
+
+    - Billboard menu
+
+      <img width="1043" height="411" alt="Image" src="https://github.com/user-attachments/assets/2e654034-c1c0-4803-a8e9-dbcaa149a5cc" />
+
+    - Ticket booking menu
+
+      <img width="614" height="596" alt="Image" src="https://github.com/user-attachments/assets/cd4521a3-93b1-4f60-8014-057c4a416244" />
+
+    - Order list menu
+
+      <img width="909" height="471" alt="Image" src="https://github.com/user-attachments/assets/32356dba-1088-4714-8630-3603de1d3e81" />
+
+    - Order info menu
+ 
+      <img width="594" height="808" alt="Image" src="https://github.com/user-attachments/assets/41ef9ad8-f2ee-455d-bebc-ca230a462c67" />
+
+    - An example of order receipt
+
+      <img width="637" height="197" alt="Image" src="https://github.com/user-attachments/assets/bd20d9d5-3bba-4611-a3b1-14bd52c24feb" />
+
+    - Movie information menu
+
+      <img width="594" height="442" alt="Image" src="https://github.com/user-attachments/assets/642cc507-2e44-4044-a09c-0703560b6bdd" />
+
+    - Movie review menu
+
+      <img width="595" height="674" alt="Image" src="https://github.com/user-attachments/assets/509a8ad7-3bde-492f-9c5d-4a534a63fc3b" />
       
 
+- Administrator menus (all menus above and some additional)
+  - Main menu
 
-- Menu of the administrator
+    <img width="626" height="651" alt="Image" src="https://github.com/user-attachments/assets/33850625-be1c-4bec-9037-d905eea1c04c" />
 
-  <img width="626" height="651" alt="Image" src="https://github.com/user-attachments/assets/33850625-be1c-4bec-9037-d905eea1c04c" />
+  - User list menu
 
-
-
-- User list menu
-
-  <img width="800" height="555" alt="Image" src="https://github.com/user-attachments/assets/39450272-7623-4950-b1af-8b9b6c6f5f49" />
-
-- User information menu
+    <img width="800" height="555" alt="Image" src="https://github.com/user-attachments/assets/39450272-7623-4950-b1af-8b9b6c6f5f49" />
+    
+  - User information menu
 
   <img width="595" height="526" alt="Image" src="https://github.com/user-attachments/assets/8c72c6e7-ba05-415a-90ea-008b35b746a0" />
+
+  - Movie statistics menu
+
+    <img width="748" height="571" alt="Image" src="https://github.com/user-attachments/assets/0cb1c407-078f-42e5-a87e-3a8af2593292" />
+
+<br/>
+
+And many other features not shown here! Feel free to check out :)

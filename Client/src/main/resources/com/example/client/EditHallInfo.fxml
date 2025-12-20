@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="526.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="windowControllers.halls.EditHallInfo">
+   <children>
+      <Pane prefHeight="84.0" prefWidth="623.0" style="-fx-background-color: #355326;">
+         <children>
+            <Label layoutX="190.0" layoutY="19.0" text="Editing hall info" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="24.0" layoutY="21.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="212.0" layoutY="93.0" prefHeight="28.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label text="Hall:" textFill="#b39d96">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="numberLabel" text="number" textFill="#b39d96">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TextArea fx:id="seatsList" editable="false" layoutX="41.0" layoutY="127.0" prefHeight="200.0" prefWidth="552.0" promptText="Places here" scrollLeft="100.0" scrollTop="100.0">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="messageLabel" layoutX="268.0" layoutY="408.0" text="сообщение" textFill="RED" visible="false">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <HBox layoutX="222.0" layoutY="369.0" prefHeight="28.0" prefWidth="200.0" spacing="10.0" />
+      <Button fx:id="editHallButton" layoutX="265.0" layoutY="436.0" mnemonicParsing="false" onAction="#onEditHallButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="70.0" layoutY="485.0" prefHeight="19.0" prefWidth="483.0" text="сообщение" textFill="RED" visible="false">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="41.0" layoutY="346.0" prefHeight="75.0" prefWidth="286.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="61.0" prefWidth="165.0">
+               <children>
+                  <HBox prefHeight="28.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label text="Row:" textFill="#b39d96">
+                           <font>
+                              <Font name="Comic Sans MS" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Ycoord" prefHeight="27.0" prefWidth="84.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label text="Place:" textFill="#b39d96">
+                           <font>
+                              <Font name="Comic Sans MS" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Xcoord" prefHeight="27.0" prefWidth="84.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="113.0">
+               <children>
+                  <RadioButton fx:id="StandartRadio" mnemonicParsing="false" onAction="#getType" text="standart" textFill="#b39d96" toggleGroup="$type">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="type" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="ComfortRadio" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#getType" text="comfort" textFill="#b39d96" toggleGroup="$type">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="VIPRadio" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#getType" text="VIP" textFill="#b39d96" toggleGroup="$type">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="updateSeatButton" layoutX="343.0" layoutY="362.0" mnemonicParsing="false" onAction="#onEditSeatButtonClick" style="-fx-background-color: #E7CAA9; -fx-background-radius: 0;" text="Update place" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

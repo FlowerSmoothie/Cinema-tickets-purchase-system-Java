@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="610.0" style="-fx-background-color: #F9F8F6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="windowControllers.menus.MenuContentManager">
+   <children>
+      <ImageView fitHeight="148.0" fitWidth="273.0" layoutX="361.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/cinemaTape.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logOutButton" layoutX="29.0" layoutY="386.0" mnemonicParsing="false" onAction="#onLogOUtButtonClick" style="-fx-background-color: #E7CAA9; -fx-background-radius: 0;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="97.0" fitWidth="218.0" layoutX="428.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/tickets.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="-1.0" prefHeight="84.0" prefWidth="620.0" style="-fx-background-color: #355326;">
+         <children>
+            <Label layoutX="269.0" layoutY="19.0" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox alignment="CENTER" layoutX="206.0" layoutY="118.0" prefHeight="222.0" prefWidth="208.0" spacing="10.0">
+         <children>
+            <Button fx:id="showAfishaButton" mnemonicParsing="false" onAction="#onAfishaButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Check the billboard" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="profileButton" mnemonicParsing="false" onAction="#onProfileButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Account info" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="showReviewsButton" mnemonicParsing="false" onAction="#onShowReviewButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Show reviews" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+            <Separator prefHeight="5.0" prefWidth="208.0" />
+            <Button fx:id="showSeancesButton" mnemonicParsing="false" onAction="#onSeancesButtonClick" style="-fx-background-color: #7C9982; -fx-background-radius: 0;" text="Showings list" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

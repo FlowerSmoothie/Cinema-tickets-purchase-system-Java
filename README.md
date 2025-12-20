@@ -45,17 +45,22 @@ Some screenshots of the Client application work:
   
   <img width="597" height="442" alt="Image" src="https://github.com/user-attachments/assets/dde70670-73ac-4715-ade8-d2a0fe774d97" />
 
-- Menu of usual user
-
+- Usual user menus
+    - Main menu
+  
   <img width="596" height="385" alt="Image" src="https://github.com/user-attachments/assets/0c4f8543-11de-4d3c-a91d-11f46cde8de3" />
+
+    - Account info menu
+
+  <img width="616" height="391" alt="Image" src="https://github.com/user-attachments/assets/e7f0447d-abdb-4b8a-ba2b-9c71049d08ba" />
+      
+
 
 - Menu of the administrator
 
   <img width="626" height="651" alt="Image" src="https://github.com/user-attachments/assets/33850625-be1c-4bec-9037-d905eea1c04c" />
 
-- Account info menu
 
-  <img width="616" height="391" alt="Image" src="https://github.com/user-attachments/assets/e7f0447d-abdb-4b8a-ba2b-9c71049d08ba" />
 
 - User list menu
 

@@ -94,7 +94,7 @@ Some screenshots of the Client application work:
     
   - User information menu
 
-  <img width="595" height="526" alt="Image" src="https://github.com/user-attachments/assets/8c72c6e7-ba05-415a-90ea-008b35b746a0" />
+    <img width="595" height="526" alt="Image" src="https://github.com/user-attachments/assets/8c72c6e7-ba05-415a-90ea-008b35b746a0" />
 
   - Movie statistics menu
 
